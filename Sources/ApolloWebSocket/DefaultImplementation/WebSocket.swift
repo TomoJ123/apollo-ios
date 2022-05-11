@@ -414,7 +414,7 @@ public final class WebSocket: NSObject, WebSocketClient, StreamDelegate, WebSock
    Start the stream connection and write the data to the output stream.
    */
   private func initStreamsWithData(_ data: Data, _ port: Int) {
-
+    print("Data bytes from data- \(data)")
     guard let url = request.url else {
       disconnectStream(nil, runDelegate: true)
       return
