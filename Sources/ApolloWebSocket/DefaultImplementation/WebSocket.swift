@@ -391,7 +391,7 @@ public final class WebSocket: NSObject, WebSocketClient, StreamDelegate, WebSock
       }
     }
     httpBody += "\r\n"
-
+    print("Data bytes from data--\(httpBody)")
     initStreamsWithData(httpBody.data(using: .utf8)!, Int(port!))
   }
 
